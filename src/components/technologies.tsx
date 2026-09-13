@@ -22,7 +22,7 @@ const Technologies = () => {
 
   return (
 
-    <div className="max-w-[90%] mx-auto mt-10 pb-20">
+    <div className="max-w-[80%] mx-auto mt-10 pb-20">
       <h2 className="font-bold text-4xl mb-1">Explore the <span className="bg-gradient-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] bg-clip-text text-transparent">Technologies</span></h2>
       <p className="text-[#64748B] mb-4">Pick one technology per category to build your ideal stack.</p>
     <div className="grid grid-cols-12 gap-4">

@@ -12,13 +12,9 @@ const Technology = ({ technology, setSelected }: TechnologiesProp) => {
   const [isAdded, setAdded] = useState(false);
 
   const handleClick = () => {
-    // Add this technology to the selected array
     setSelected((prev) => [...prev, technology]);
 
-    // Disable the button
     setAdded(true);
-
-    // Show toast
     toast.success(`${technology.name} is Added Successfully`);
   };
 

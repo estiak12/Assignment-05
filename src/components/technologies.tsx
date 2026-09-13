@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import type { DataType } from "../type";
+import Technology from "./technology";
+import Selected from "./selected";
 
 const Technologies = () => {
   const [data, setData] = useState<DataType[]>([]);
@@ -24,7 +26,6 @@ const Technologies = () => {
       <h2 className="font-bold text-4xl mb-1">Explore the <span className="bg-gradient-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] bg-clip-text text-transparent">Technologies</span></h2>
       <p className="text-[#64748B] mb-4">Pick one technology per category to build your ideal stack.</p>
     <div className="grid grid-cols-12 gap-4">
-      {/* Technology Cards */}
       <div className="col-span-9 grid grid-cols-3 gap-5">
         {data.map((technology) => (
           <Technology
@@ -35,7 +36,6 @@ const Technologies = () => {
         ))}
       </div>
 
-      {/* Selected Technologies */}
       <div className="col-span-3">
         <Selected selected={selected} setSelected={setSelected}/>
       </div>
